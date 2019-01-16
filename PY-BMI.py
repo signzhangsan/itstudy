@@ -3,7 +3,7 @@
 name = str(input("输入姓名："))
 #hight = float(input("身高:"))
 #weight = float(input("体重:"))
-BMI = float(input("体重:"))/(float(input("身高:"))**2)    #计算BMI值；
+BMI = float(input(isinstance("体重:",(int,float))))/(float(input(isinstance("身高:",(int,float))))**2)    #计算BMI值；
 BMImodel = ['BMI标准如下:',
 '==========================',
 'BMI <= 18.5 体重过轻',
