@@ -1,9 +1,16 @@
 #coding=utf-8
 
 name = str(input("输入姓名："))
-#hight = float(input("身高:"))
-#weight = float(input("体重:"))
-BMI = float(input(isinstance("体重:",(int,float))))/(float(input(isinstance("身高:",(int,float))))**2)    #计算BMI值；
+hight = input("身高:米")
+isinstance(hight,float)
+if True:
+    hight = float(hight)
+else:
+    hight = float(input("身高：（数字）米"))
+
+weight = float(input("体重: ","KG"))
+BMI = weight / (hight ** 2)
+#BMI = float(input(isinstance("体重:",(int,float))))/(float(input(isinstance("身高:",(int,float))))**2)    #计算BMI值；
 BMImodel = ['BMI标准如下:',
 '==========================',
 'BMI <= 18.5 体重过轻',
